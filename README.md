@@ -1,6 +1,6 @@
 # Tiki Wiki CMS Docker Setup
 
-This project provides a complete and production-ready Docker environment for running **Tiki Wiki CMS Groupware 27.x LTS**, using Apache, PHP 8.2, and MariaDB 10.6.
+This project provides a complete and production-ready Docker environment for running **Tiki Wiki CMS Groupware 27.x LTS**, using Apache, PHP 8.4, and MariaDB 10.6.
 
 ---
 
@@ -92,10 +92,11 @@ These are required in your `.env` file:
 
 ## Security Tips
 
+- Consider using Docker Secrets or an external secret manager (e.g., Vault, AWS Secrets Manager) to store sensitive credentials securely
 - Use strong, unique passwords in your `.env`
 - Keep your `.env` file and any SQL dumps out of version control
 - Use HTTPS (with Nginx, Traefik, or Caddy) if deploying in production
-- Do not expose the database container directly to the internet
+- Do not expose the database container directly to the interneti
 
 ---
 
