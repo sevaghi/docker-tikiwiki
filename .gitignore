@@ -1,0 +1,14 @@
+.env
+.env.*
+*.sql
+*.zip
+*.tar.gz
+*.bak
+*.log
+db_data/
+tiki_data/
+vendor/
+node_modules/
+*.log
+.DS_Store
+!.env.example
